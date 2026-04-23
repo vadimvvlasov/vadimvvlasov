@@ -1,6 +1,7 @@
-# ML Engineer | Computer Vision & Geospatial ML
+## Vadim Vlasov — ML Engineer
 
-Production ML pipelines for satellite imagery: from raw Sentinel-2/HLS to field boundary segmentation, crop classification, and cadastral integration.
+ML Engineer specializing in **geospatial computer vision** for satellite imagery.
+End-to-end pipelines: raw Sentinel-2/HLS → field boundary segmentation → crop classification → GeoPackage.
 
 ---
 
@@ -16,13 +17,10 @@ Production ML pipelines for satellite imagery: from raw Sentinel-2/HLS to field 
 
 ---
 
-## Tech Stack
+### Stack
 
-**ML/CV:** Python, TensorFlow, PyTorch, ResUNet-A, Transformer Encoder, ESRGAN, Computer Vision, Semantic Segmentation
-
-**Geospatial:** eo-learn, eo-flow, GDAL, Rasterio, GeoPandas, Sentinel-2, HLS (NASA), STAC, MapBiomas, GeoPackage
-
-**Infra:** Apache Airflow, AWS (EC2, S3), Docker, GitLab CI/CD, memray
+`Python` `PyTorch` `TensorFlow` `Apache Airflow` `AWS (EC2 · S3 · Batch)`
+`GDAL` `Rasterio` `GeoPandas` `eo-learn` `STAC` `Docker` `Sentinel-2`
 
 ---
 
@@ -30,13 +28,6 @@ Production ML pipelines for satellite imagery: from raw Sentinel-2/HLS to field 
 
 **[satellite-field-segmentation](https://github.com/vadimvvlasov/satellite-field-segmentation)**
 — Field boundary detection from satellite imagery: ResUNet-A, geospatial postprocessing, GeoPackage output.
-
----
-
-## Contact
-
-- LinkedIn: linkedin.com/in/vadim-vlasov-181503b6
-- CV: vadimvvlasov.github.io/cv/
 
 ---
 
