@@ -3,7 +3,7 @@
 ML Engineer specializing in **geospatial computer vision** for satellite imagery.
 Production ML pipelines: from raw satellite data to field boundary segmentation, crop classification, and geospatial analytics.
 
-🚀 **Portfolio:** [crop-ml-api (M1 ✅ FastAPI + Prometheus + Docker)](https://github.com/vadim/crop-ml-api)  
+🚀 **Portfolio:** [crop-ml-api (M1 ✅ FastAPI + Prometheus + Docker)](https://github.com/vadimvvlasov/crop-ml-api)  
 *ML Engineer with 5+ years production ML. Building FastAPI inference services with full observability.*
 
 ---
