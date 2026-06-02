@@ -1,10 +1,7 @@
 ## Vadim Vlasov — ML Engineer
 
 ML Engineer specializing in **geospatial computer vision** for satellite imagery.
-Production ML pipelines: from raw satellite data to field boundary segmentation, crop classification, and geospatial analytics.
-
-🚀 **Portfolio:** [crop-ml-api (M1 ✅ FastAPI + Prometheus + Docker)](https://github.com/vadimvvlasov/crop-ml-api)  
-*ML Engineer with 5+ years production ML. Building FastAPI inference services with full observability.*
+End-to-end pipelines: raw Sentinel-2/HLS → field boundary segmentation → crop classification → GeoPackage.
 
 ---
 
@@ -12,19 +9,26 @@ Production ML pipelines: from raw satellite data to field boundary segmentation,
 
 | What | Numbers |
 |---|---|
-| Field segmentation model | MCC = 0.91, 5+ countries |
-| Production pipeline | 35,000+ EOPatches, 11 Brazilian states |
+| Field segmentation model (ResUNet-A) | MCC = 0.91, 5+ countries |
+| Production pipeline (Airflow + AWS) | 35,000+ EOPatches, ~6M km², 11 Brazilian states |
 | Transfer learning: global → local | Brazil MCC 0.77 → 0.89, Argentina MCC 0.87 |
-| Postprocessing optimization | 33h → 20h |
-| Crop classification | Validated vs CONAB/SIDRA |
+| Postprocessing optimization | 33h → 18h (memray, malloc_trim, multiprocessing) |
+| Inference optimization (ONNX) | TF→ONNX 35-40% speedup; TFLite quantization research |
+| Crop classification (Transformer Encoder) | safra/safrinha, validated vs CONAB/SIDRA |
 
 ---
 
 ### Stack
 
-`Python` `PyTorch` `TensorFlow` `Apache Airflow` `AWS`  
-`GDAL` `Rasterio` `GeoPandas` `Sentinel-2` `Docker`  
-🚀 [crop-ml-api](https://github.com/vadim/crop-ml-api)
+`Python` `PyTorch` `TensorFlow` `ONNX` `TFLite` `Apache Airflow` `AWS (EC2 · S3 · Batch)`
+`GDAL` `Rasterio` `GeoPandas` `eo-learn` `STAC` `Docker` `Sentinel-2`
+
+---
+
+### Featured project
+
+**[satellite-field-segmentation](https://github.com/vadimvvlasov/satellite-field-segmentation)**
+— Field boundary detection from satellite imagery: ResUNet-A, geospatial postprocessing, GeoPackage output.
 
 ---
 
